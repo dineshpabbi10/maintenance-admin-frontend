@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node dist/ui/server/main.js",
+    "build": "npm run build:ssr",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "dev:ssr": "ng run ui:serve-ssr",
@@ -25,6 +25,8 @@
     "@angular/router": "~13.1.0",
     "@nguniversal/express-engine": "^13.0.2",
     "express": "^4.15.2",
+    "primeicons": "^5.0.0",
+    "primeng": "^13.4.1",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

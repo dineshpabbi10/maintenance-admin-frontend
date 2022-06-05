@@ -10,6 +10,12 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InvoicesComponent } from './pages/invoices/invoices.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
+import {InputTextModule} from 'primeng/inputtext';
+import {SidebarModule} from 'primeng/sidebar';
+import {ButtonModule} from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {OverlayPanelModule} from 'primeng/overlaypanel';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +30,12 @@ import { JobsComponent } from './pages/jobs/jobs.component';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    AppRoutingModule
+    AppRoutingModule,
+    InputTextModule,
+    SidebarModule,
+    ButtonModule,
+    BrowserAnimationsModule,
+    OverlayPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
