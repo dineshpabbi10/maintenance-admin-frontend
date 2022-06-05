@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,13 +10,13 @@ export class SidebarComponent implements OnInit {
   @Input()
   public open:boolean = false;
 
-  constructor() { }
+  constructor(private appService:AppService) { }
 
   ngOnInit(): void {
   }
 
   setOpen(bool:boolean){
-    this.open = bool;
+    this.appService.sidebarSubject.next(bool);
   }
 
 }
