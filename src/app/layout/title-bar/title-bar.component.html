@@ -14,15 +14,16 @@
                   </svg> </span>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="text" style="width:200px;" class="p-inputtext-sm" pInputText placeholder="Search a Job">         
+                    <input type="text" class="p-inputtext-sm search-bar" pInputText placeholder="Search a Job">         
                 </span>
             </div>
+            <i class="pi pi-bell text-gray-700 dark:text-gray-50 pr-2 cursor-pointer"></i>
             <app-title-dropdown></app-title-dropdown>
           </div>
     </div>
   </header>
 
-<p-overlayPanel #op>
+<p-overlayPanel [dismissable]="false" [showCloseIcon]="true" #op>
     <ng-template pTemplate>
         <span class="p-input-icon-left">
             <i class="pi pi-search"></i>
