@@ -10,6 +10,7 @@ import { AppService } from 'src/app/services/app.service';
 export class TitleBarComponent implements OnInit {
   public sidebarOpen : boolean = true;
   public url:any = '';
+  public display:boolean = false;
 
   constructor(private appService : AppService, private router: Router) { }
 
