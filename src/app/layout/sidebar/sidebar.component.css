@@ -1,0 +1,14 @@
+.hidden-cross{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .d-absolute{
+        position: absolute !important;
+        z-index: 100;
+    }
+
+    .hidden-cross{
+        display: block;
+    }
+}
