@@ -14,7 +14,7 @@
                   </svg> </span>
                 <span class="p-input-icon-left">
                     <i class="pi pi-search"></i>
-                    <input type="text" class="p-inputtext-sm search-bar" pInputText placeholder="Search a Job">         
+                    <input [formControl]="searchJobsText" (keyup.enter)="alert()" type="text" class="p-inputtext-sm search-bar" pInputText placeholder="Search Jobs">         
                 </span>
             </div>
             <!-- notification bell -->

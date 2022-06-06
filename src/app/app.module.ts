@@ -18,6 +18,8 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { CardModule } from 'primeng/card';
 import { CalendarModule } from 'primeng/calendar';
 import { TabViewModule } from 'primeng/tabview';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DividerModule } from 'primeng/divider';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { TabViewModule } from 'primeng/tabview';
     OverlayPanelModule,
     CardModule,
     CalendarModule,
-    TabViewModule
+    TabViewModule,
+    ReactiveFormsModule,
+    DividerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

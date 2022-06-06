@@ -9,7 +9,8 @@ const routes: Routes = [
   {path:'dashboard',component:DashboardComponent},
   {path:'invoices',component:InvoicesComponent},
   {path:'jobs',component:JobsComponent},
-  {path:'feedback',component:FeedbackComponent}
+  {path:'feedback',component:FeedbackComponent},
+  {path:'',redirectTo:'dashboard',pathMatch:'full'}
 ];
 
 @NgModule({

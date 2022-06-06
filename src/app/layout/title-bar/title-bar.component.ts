@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 import { NavigationEnd, Router } from '@angular/router';
 import { AppService } from 'src/app/services/app.service';
 
@@ -11,6 +12,7 @@ export class TitleBarComponent implements OnInit {
   public sidebarOpen : boolean = true;
   public url:any = '';
   public display:boolean = false;
+  public searchJobsText =  new FormControl('');
 
   constructor(private appService : AppService, private router: Router) { }
 
@@ -46,6 +48,10 @@ export class TitleBarComponent implements OnInit {
       return "Jobs"
     }
     return "";
+  }
+
+  alert(){
+    alert(this.searchJobsText.value);
   }
  
 }
