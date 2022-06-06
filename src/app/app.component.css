@@ -1,5 +1,5 @@
 .page-container{
     overflow-y: scroll;
-    /* flex: 0 1 auto; */
-    height: 100%;
+    flex: 1 1 auto;
+    background-color: #edf2f7;
 }

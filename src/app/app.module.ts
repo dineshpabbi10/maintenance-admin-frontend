@@ -10,12 +10,14 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InvoicesComponent } from './pages/invoices/invoices.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
-import {InputTextModule} from 'primeng/inputtext';
-import {SidebarModule} from 'primeng/sidebar';
-import {ButtonModule} from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {OverlayPanelModule} from 'primeng/overlaypanel';
-
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { CardModule } from 'primeng/card';
+import { CalendarModule } from 'primeng/calendar';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     DashboardComponent,
     InvoicesComponent,
     FeedbackComponent,
-    JobsComponent
+    JobsComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -35,9 +37,12 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
     SidebarModule,
     ButtonModule,
     BrowserAnimationsModule,
-    OverlayPanelModule
+    OverlayPanelModule,
+    CardModule,
+    CalendarModule,
+    TabViewModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
