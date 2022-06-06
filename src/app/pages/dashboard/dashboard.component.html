@@ -44,6 +44,7 @@
 <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 mt-2 gap-4">
     <!-- Sidebar which includes calendar card , profile card with options such as view schedule , view feedback , view chats -->
     <div class="col-span-1 md:col-span-1 lg:col-span-1">
+        <!-- Profile Card -->
         <div class="font-bold text-[#4a5568] text-xl">Profile</div>
         <p-card styleClass="p-card-shadow">
             <ng-template pTemplate="header">
@@ -94,15 +95,44 @@
                 
             </ng-template>
         </p-card>
+
+        <!-- Proposals or Jobs Taken -->
         <div class="font-bold text-[#4a5568] mt-2 text-xl">Scheduled Jobs</div>
         <p-calendar styleClass="w-full" [inline]="true"></p-calendar>
+
+        <!-- Help Cards -->
+        <div class="font-bold text-[#4a5568] mt-2 text-xl">Quick Links</div>
+        <p-card styleClass="p-card-shadow">
+                <div>
+                    <a href="#" class="flex justify-center items-center w-full p-3 bg-gray-200 rounded-md">
+                        Help Center&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="flex justify-center items-center w-full rounded-md p-3">
+                        Get Paid &nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                            <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="flex justify-center items-center w-full p-3 bg-gray-200 rounded-md">
+                        Email Us &nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check" viewBox="0 0 16 16">
+                            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                          </svg>
+                    </a>
+                </div>
+        </p-card>
     </div>
 
     <!-- jobs -->
     <div class="col-span-1 md:col-span-1 lg:col-span-3">
         <div class="font-bold text-[#4a5568] text-xl">Jobs You Might Like</div>
-        <p-card>
-            <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+        <!-- <p-card> -->
+            <div class="text-sm font-bold shadow text-center bg-white rounded-md text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
                 <ul class="flex flex-wrap -mb-px">
                     <li class="mr-2">
                         <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Best Matches</a>
@@ -115,7 +145,8 @@
                     </li>
                 </ul>
             </div>
-        </p-card>
+            <app-job-list></app-job-list>
+        <!-- </p-card> -->
     </div>
     
 </div>

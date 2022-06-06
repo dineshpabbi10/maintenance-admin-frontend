@@ -20,6 +20,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { TabViewModule } from 'primeng/tabview';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DividerModule } from 'primeng/divider';
+import { JobListComponent } from './pages/dashboard/components/job-list/job-list.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { DividerModule } from 'primeng/divider';
     InvoicesComponent,
     FeedbackComponent,
     JobsComponent,
+    JobListComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
