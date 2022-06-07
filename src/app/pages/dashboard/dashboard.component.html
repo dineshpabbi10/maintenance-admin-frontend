@@ -1,7 +1,7 @@
 <div class="font-black text-2xl text-[#4a5568]">Dashboard</div>
 
 <!-- 4 Analytics  -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-4 mt-2">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-full gap-4 mt-2">
     <p-card>
         <div class="flex gap-2 justify-start items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-coin text-amber-500 mr-3" viewBox="0 0 16 16">
@@ -41,7 +41,7 @@
 </div>
 
 <!-- Jobs + sidebar (calendar and profile) -->
-<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 mt-2 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-2 gap-4">
     <!-- Sidebar which includes calendar card , profile card with options such as view schedule , view feedback , view chats -->
     <div class="col-span-1 md:col-span-1 lg:col-span-1">
         <!-- Profile Card -->
@@ -129,22 +129,22 @@
     </div>
 
     <!-- jobs -->
-    <div class="col-span-1 md:col-span-1 lg:col-span-3">
+    <div class="col-span-1 md:col-span-2 lg:col-span-3">
         <div class="font-bold text-[#4a5568] text-xl">Jobs You Might Like</div>
             <div class="text-sm font-bold shadow text-center bg-white rounded-md text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
                 <ul class="flex flex-wrap -mb-px">
                     <li class="mr-2">
-                        <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Best Matches</a>
+                        <a routerLink="matches" class="inline-block p-4 rounded-t-lg border-b-2 dark:text-blue-500 dark:border-blue-500" [routerLinkActive]="['border-blue-600','active','text-blue-600']">Best Matches</a>
                     </li>
                     <li class="mr-2">
-                        <a href="#" class="inline-block p-4 text-blue-600 rounded-t-lg border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500" aria-current="page">Most Recent</a>
+                        <a routerLink="recent" class="inline-block p-4 rounded-t-lg border-b-2 dark:text-blue-500 dark:border-blue-500" [routerLinkActive]="['border-blue-600','active','text-blue-600']" aria-current="page">Most Recent</a>
                     </li>
                     <li class="mr-2">
-                        <a href="#" class="inline-block p-4 rounded-t-lg border-b-2 border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300">Saved</a>
+                        <a routerLink="saved"class="inline-block p-4 rounded-t-lg border-b-2 dark:text-blue-500 dark:border-blue-500" [routerLinkActive]="['border-blue-600','active','text-blue-600']">Saved</a>
                     </li>
                 </ul>
             </div>
-            <app-job-list></app-job-list>
+            <router-outlet></router-outlet>
     </div>
     
 </div>

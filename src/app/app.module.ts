@@ -21,6 +21,8 @@ import { TabViewModule } from 'primeng/tabview';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DividerModule } from 'primeng/divider';
 import { JobListComponent } from './pages/dashboard/components/job-list/job-list.component';
+import { ChipModule } from 'primeng/chip';
+import { JobCardComponent } from './pages/dashboard/components/job-card/job-card.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { JobListComponent } from './pages/dashboard/components/job-list/job-list
     FeedbackComponent,
     JobsComponent,
     JobListComponent,
+    JobCardComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -46,7 +49,8 @@ import { JobListComponent } from './pages/dashboard/components/job-list/job-list
     CalendarModule,
     TabViewModule,
     ReactiveFormsModule,
-    DividerModule
+    DividerModule,
+    ChipModule
   ],
   providers: [],
   bootstrap: [AppComponent],
