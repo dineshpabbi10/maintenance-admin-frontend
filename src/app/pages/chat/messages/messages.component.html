@@ -6,7 +6,7 @@
     </div>
    
 
-    <div class="w-full height-card overflow-y-auto sc2 shadow bg-gray-50 rounded-md">
+    <div class="w-full overflow-y-auto sc2 shadow bg-gray-50 rounded-md" [ngClass]="{'h-[calc(100vh-22rem)]':smallScreen,'height-card':!smallScreen}">
         <!-- Card -->
             <ul class="space-y-2 p-4 mt-2 rounded-lg">
                 <li class="flex justify-start">

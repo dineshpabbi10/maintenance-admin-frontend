@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { AppService } from 'src/app/services/app.service';
 
 @Component({
@@ -8,6 +8,8 @@ import { AppService } from 'src/app/services/app.service';
 })
 export class ListComponent implements OnInit {
   public favourites:any = ['a','b','c','d','e','f','i','j','k','l','m','n','o','p','q'];
+  @Input()
+  public smallScreen :any  = false;
 
   constructor(private appService:AppService) { }
 

@@ -18,7 +18,7 @@
     </div>
    
 
-    <div class="w-full height-card overflow-y-auto sc2 cursor-pointer">
+    <div class="w-full overflow-y-auto sc2 cursor-pointer" [ngClass]="{'h-[calc(100vh-20rem)]':smallScreen,'height-card':!smallScreen}">
         <!-- Card -->
         <div *ngFor="let i of favourites" (click)="openConversation(1)" class="w p-4 mt-2 rounded-lg shadow border border-gray-200">
             <div class="flex items-center">

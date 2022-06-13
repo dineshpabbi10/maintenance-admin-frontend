@@ -9,6 +9,8 @@ import { AppService } from 'src/app/services/app.service';
 export class MessagesComponent implements OnInit {
   @Input()
   public showBack:any = false;
+  @Input()
+  public smallScreen:any = false;
   public chatId:any = null;
   public favourites:any = ['a','b','c','d','e','f','i','j','k','l','m','n','o','p','q'];
 

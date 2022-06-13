@@ -9,9 +9,9 @@
 </div>
 
 <div class="small-screen" *ngIf="showList == true;else messages">
-    <app-list></app-list>
+    <app-list [smallScreen]="true"></app-list>
 </div>
 
 <ng-template class="small-screen"  #messages>
-    <app-messages [showBack]="true"></app-messages>
+    <app-messages [smallScreen]="true" [showBack]="true"></app-messages>
 </ng-template>
