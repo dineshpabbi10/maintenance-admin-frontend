@@ -1,0 +1,7 @@
+:host ::ng-deep .height-card{
+    max-height: 650px;
+}
+
+.input-height{
+    height: 100px;
+}

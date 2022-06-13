@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-job-list',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-list.component.css']
 })
 export class JobListComponent implements OnInit {
+  public url:any;
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.router.events.subscribe((event:any)=>{
+      if (event instanceof NavigationEnd) {
+        // get current route
+        this.url = event?.url;
+    }
+    });
+   }
 
   ngOnInit(): void {
+    
   }
 
 }
