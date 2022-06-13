@@ -18,9 +18,9 @@
     </div>
    
 
-    <div class="w-full height-card overflow-y-auto sc2">
+    <div class="w-full height-card overflow-y-auto sc2 cursor-pointer">
         <!-- Card -->
-        <div *ngFor="let i of favourites" class="w p-4 mt-2 rounded-lg shadow border border-gray-200">
+        <div *ngFor="let i of favourites" (click)="openConversation(1)" class="w p-4 mt-2 rounded-lg shadow border border-gray-200">
             <div class="flex items-center">
                 <div class="basis-0.2 mr-3">
                     <p-avatar shape="circle" label="t"></p-avatar>
