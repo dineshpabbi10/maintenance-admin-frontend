@@ -1,10 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:host ::ng-deep .height-card{
+    max-height: 650px;
+}
 
-body{
-    font-family: 'Roboto', sans-serif;
+.input-height{
+    height: 100px;
 }
 
 /* Scroll 2 */
@@ -22,3 +21,4 @@ body{
     background-color: #11171a1c;
     border-radius: 10px;
 }
+  

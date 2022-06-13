@@ -23,6 +23,10 @@ import { DividerModule } from 'primeng/divider';
 import { JobListComponent } from './pages/dashboard/components/job-list/job-list.component';
 import { ChipModule } from 'primeng/chip';
 import { JobCardComponent } from './pages/dashboard/components/job-card/job-card.component';
+import { ChatComponent } from './pages/chat/chat.component';
+import { ListComponent } from './pages/chat/list/list.component';
+import { MessagesComponent } from './pages/chat/messages/messages.component';
+import {AvatarModule} from 'primeng/avatar';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,9 @@ import { JobCardComponent } from './pages/dashboard/components/job-card/job-card
     JobsComponent,
     JobListComponent,
     JobCardComponent,
+    ChatComponent,
+    ListComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -50,7 +57,8 @@ import { JobCardComponent } from './pages/dashboard/components/job-card/job-card
     TabViewModule,
     ReactiveFormsModule,
     DividerModule,
-    ChipModule
+    ChipModule,
+    AvatarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
