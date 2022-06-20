@@ -47,6 +47,9 @@ export class TitleBarComponent implements OnInit {
     else if(this.url === "/jobs"){
       return "Jobs"
     }
+    else if(this.url === "/myservices"){
+      return "My Services"
+    }
     return "";
   }
 

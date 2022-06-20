@@ -12,6 +12,8 @@
     <app-list [smallScreen]="true"></app-list>
 </div>
 
-<ng-template class="small-screen"  #messages>
-    <app-messages [smallScreen]="true" [showBack]="true"></app-messages>
+<ng-template #messages>
+    <div class="small-screen">
+        <app-messages [smallScreen]="true" [showBack]="true"></app-messages>
+    </div>
 </ng-template>
