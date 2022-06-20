@@ -27,6 +27,8 @@ import { ChatComponent } from './pages/chat/chat.component';
 import { ListComponent } from './pages/chat/list/list.component';
 import { MessagesComponent } from './pages/chat/messages/messages.component';
 import {AvatarModule} from 'primeng/avatar';
+import { MyServicesComponent } from './pages/my-services/my-services.component';
+import {DropdownModule} from 'primeng/dropdown';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import {AvatarModule} from 'primeng/avatar';
     ChatComponent,
     ListComponent,
     MessagesComponent,
+    MyServicesComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -58,7 +61,8 @@ import {AvatarModule} from 'primeng/avatar';
     ReactiveFormsModule,
     DividerModule,
     ChipModule,
-    AvatarModule
+    AvatarModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent],
