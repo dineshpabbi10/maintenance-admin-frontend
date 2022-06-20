@@ -1,1 +1,24 @@
-<p>jobs works!</p>
+<div class="font-black text-2xl text-[#4a5568]">Jobs</div>
+
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 w-full gap-4 mt-2">
+    <div class="col-span-1 md:col-span-2 lg:col-span-3">
+        <div class="font-bold text-[#4a5568] text-xl">Jobs You Might Like</div>
+        <div
+            class="text-sm font-bold shadow text-center bg-white rounded-md text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
+            <ul class="flex flex-wrap -mb-px">
+                <li class="mr-2">
+                    <a routerLink="matches"
+                        class="inline-block p-4 rounded-t-lg border-b-2 dark:text-blue-500 dark:border-blue-500"
+                        [routerLinkActive]="['border-blue-600','active','text-blue-600']">Search</a>
+                </li>
+                <li class="mr-2">
+                    <a routerLink="recent"
+                        class="inline-block p-4 rounded-t-lg border-b-2 dark:text-blue-500 dark:border-blue-500"
+                        [routerLinkActive]="['border-blue-600','active','text-blue-600']" aria-current="page">Saved</a>
+                </li>
+            </ul>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
