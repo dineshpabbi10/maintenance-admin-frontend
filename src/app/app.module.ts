@@ -29,7 +29,7 @@ import { MessagesComponent } from './pages/chat/messages/messages.component';
 import {AvatarModule} from 'primeng/avatar';
 import { MyServicesComponent } from './pages/my-services/my-services.component';
 import {DropdownModule} from 'primeng/dropdown';
-
+import {TableModule} from 'primeng/table';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +62,8 @@ import {DropdownModule} from 'primeng/dropdown';
     DividerModule,
     ChipModule,
     AvatarModule,
-    DropdownModule
+    DropdownModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent],
