@@ -8,7 +8,7 @@ import { AppService } from 'src/app/services/app.service';
 })
 export class SidebarComponent implements OnInit {
   @Input()
-  public open:boolean = false;
+  public open:boolean = true;
 
   constructor(private appService:AppService) { }
 

@@ -14,9 +14,7 @@ export class AppComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.appService.sidebarSubject$.subscribe((isOpen:boolean)=>{
-      this.sidebarOpen = isOpen;
-    })
+   
   }
 
 }

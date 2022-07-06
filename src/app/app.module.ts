@@ -30,6 +30,8 @@ import {AvatarModule} from 'primeng/avatar';
 import { MyServicesComponent } from './pages/my-services/my-services.component';
 import {DropdownModule} from 'primeng/dropdown';
 import {TableModule} from 'primeng/table';
+import { AppContainerComponent } from './pages/app-container/app-container.component';
+import { LandingContainerComponent } from './pages/landing-container/landing-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +48,8 @@ import {TableModule} from 'primeng/table';
     ListComponent,
     MessagesComponent,
     MyServicesComponent,
+    AppContainerComponent,
+    LandingContainerComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
