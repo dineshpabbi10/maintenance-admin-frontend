@@ -1,0 +1,13 @@
+<div class="flex">
+    <div class="flex-0.2">
+      <app-sidebar [open]="sidebarOpen"></app-sidebar>
+    </div>
+    <div class="flex-1 h-screen flex flex-col">
+      <app-title-bar></app-title-bar>
+      <div class="page-container mt-2 p-4">
+        <div class="max-w-screen-2xl m-auto h-auto">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+</div>
