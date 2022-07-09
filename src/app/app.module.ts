@@ -32,6 +32,15 @@ import {DropdownModule} from 'primeng/dropdown';
 import {TableModule} from 'primeng/table';
 import { AppContainerComponent } from './pages/app-container/app-container.component';
 import { LandingContainerComponent } from './pages/landing-container/landing-container.component';
+import { LandingNavbarComponent } from './pages/landing-container/components/landing-navbar/landing-navbar.component';
+import { TestimonialsComponent } from './pages/landing-container/components/testimonials/testimonials.component';
+import { FeaturesComponent } from './pages/landing-container/components/features/features.component';
+import { WhyChoseUsComponent } from './pages/landing-container/components/why-chose-us/why-chose-us.component';
+import { OurImpactComponent } from './pages/landing-container/components/our-impact/our-impact.component';
+import { FooterComponent } from './pages/landing-container/components/footer/footer.component';
+import { DiveInComponent } from './pages/landing-container/components/dive-in/dive-in.component';
+import { BlogsComponent } from './pages/landing-container/components/blogs/blogs.component';
+import { PricingComponent } from './pages/landing-container/components/pricing/pricing.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +59,15 @@ import { LandingContainerComponent } from './pages/landing-container/landing-con
     MyServicesComponent,
     AppContainerComponent,
     LandingContainerComponent,
+    LandingNavbarComponent,
+    TestimonialsComponent,
+    FeaturesComponent,
+    WhyChoseUsComponent,
+    OurImpactComponent,
+    FooterComponent,
+    DiveInComponent,
+    BlogsComponent,
+    PricingComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
