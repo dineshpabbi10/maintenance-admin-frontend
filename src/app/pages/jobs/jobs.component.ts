@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class JobsComponent implements OnInit {
 
   constructor() { }
+  jobs = [
+    { name: "Applied" },
+    { name: "Inprogress" },
+    { name: "Completed" }
+  ];
 
   ngOnInit(): void {
   }
