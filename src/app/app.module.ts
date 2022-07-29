@@ -41,6 +41,8 @@ import { FooterComponent } from './pages/landing-container/components/footer/foo
 import { DiveInComponent } from './pages/landing-container/components/dive-in/dive-in.component';
 import { BlogsComponent } from './pages/landing-container/components/blogs/blogs.component';
 import { PricingComponent } from './pages/landing-container/components/pricing/pricing.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,6 +70,8 @@ import { PricingComponent } from './pages/landing-container/components/pricing/p
     DiveInComponent,
     BlogsComponent,
     PricingComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

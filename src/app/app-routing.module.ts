@@ -8,7 +8,9 @@ import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { InvoicesComponent } from './pages/invoices/invoices.component';
 import { JobsComponent } from './pages/jobs/jobs.component';
 import { LandingContainerComponent } from './pages/landing-container/landing-container.component';
+import { LoginComponent } from './pages/login/login.component';
 import { MyServicesComponent } from './pages/my-services/my-services.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
   {path:'app',component:AppContainerComponent,children:[
@@ -25,6 +27,8 @@ const routes: Routes = [
     {path:'feedback',component:FeedbackComponent},
     {path:'',redirectTo:'dashboard',pathMatch:'full'},
   ]},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
   {path:'',component:LandingContainerComponent}
 ];
 
