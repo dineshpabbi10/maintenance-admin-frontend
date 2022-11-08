@@ -4,17 +4,16 @@ import { AppService } from 'src/app/services/app.service';
 @Component({
   selector: 'app-app-container',
   templateUrl: './app-container.component.html',
-  styleUrls: ['./app-container.component.css']
+  styleUrls: ['./app-container.component.css'],
 })
 export class AppContainerComponent implements OnInit {
-  public sidebarOpen :boolean = true;
+  public sidebarOpen: boolean = true;
 
-  constructor(private appService:AppService) { }
+  constructor(private appService: AppService) {}
 
   ngOnInit(): void {
-    this.appService.sidebarSubject$.subscribe((isOpen:boolean)=>{
+    this.appService.sidebarSubject$.subscribe((isOpen: boolean) => {
       this.sidebarOpen = isOpen;
-    })
+    });
   }
-
 }
