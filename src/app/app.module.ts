@@ -26,10 +26,10 @@ import { JobCardComponent } from './pages/dashboard/components/job-card/job-card
 import { ChatComponent } from './pages/chat/chat.component';
 import { ListComponent } from './pages/chat/list/list.component';
 import { MessagesComponent } from './pages/chat/messages/messages.component';
-import { AvatarModule } from 'primeng/avatar';
+import {AvatarModule} from 'primeng/avatar';
 import { MyServicesComponent } from './pages/my-services/my-services.component';
-import { DropdownModule } from 'primeng/dropdown';
-import { TableModule } from 'primeng/table';
+import {DropdownModule} from 'primeng/dropdown';
+import {TableModule} from 'primeng/table';
 import { AppContainerComponent } from './pages/app-container/app-container.component';
 import { LandingContainerComponent } from './pages/landing-container/landing-container.component';
 import { LandingNavbarComponent } from './pages/landing-container/components/landing-navbar/landing-navbar.component';
@@ -89,7 +89,7 @@ import { RegisterComponent } from './pages/register/register.component';
     ChipModule,
     AvatarModule,
     DropdownModule,
-    TableModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent],

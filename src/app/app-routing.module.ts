@@ -13,39 +13,29 @@ import { MyServicesComponent } from './pages/my-services/my-services.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
-  {
-    path: 'app',
-    component: AppContainerComponent,
-    children: [
-      {
-        path: 'dashboard',
-        component: DashboardComponent,
-        children: [
-          { path: 'recent', component: JobListComponent },
-          { path: 'matches', component: JobListComponent },
-          { path: 'saved', component: JobListComponent },
-          { path: '', redirectTo: 'recent', pathMatch: 'full' },
-        ],
-      },
-      { path: 'myservices', component: MyServicesComponent },
-      { path: 'invoices', component: InvoicesComponent },
-      { path: 'jobs', component: JobsComponent },
-      { path: 'chats', component: ChatComponent },
-      { path: 'feedback', component: FeedbackComponent },
-      { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-    ],
-  },
-  { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: '', component: LandingContainerComponent },
+  {path:'app',component:AppContainerComponent,children:[
+    {path:'dashboard',component:DashboardComponent,children:[
+      {path:'recent',component:JobListComponent},
+      {path:'matches',component:JobListComponent},
+      {path:'saved',component:JobListComponent},
+      {path:'',redirectTo:'recent',pathMatch:'full'}
+    ]},
+    {path:'myservices',component:MyServicesComponent},
+    {path:'invoices',component:InvoicesComponent},
+    {path:'jobs',component:JobsComponent},
+    {path:'chats',component:ChatComponent},
+    {path:'feedback',component:FeedbackComponent},
+    {path:'',redirectTo:'dashboard',pathMatch:'full'},
+  ]},
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+  {path:'',component:LandingContainerComponent}
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, {
-      initialNavigation: 'enabledBlocking',
-    }),
-  ],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes, {
+    initialNavigation: 'enabledBlocking'
+  })],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
