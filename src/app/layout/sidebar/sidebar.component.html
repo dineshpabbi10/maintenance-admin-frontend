@@ -1,17 +1,15 @@
-<div *ngIf="open" class="relative bg-gray-700 dark:bg-gray-800 d-absolute">
+<div *ngIf="open" class="relative bg-primary-500 d-absolute">
     <svg (click)="setOpen(false)" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x text-gray-200 cursor-pointer absolute top-0 right-0 hidden-cross" viewBox="0 0 16 16">
         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
     </svg>
     <div class="flex flex-col sm:flex-row sm:justify-around">
         <div class="w-64 h-screen">
-            <div class="flex items-center justify-center mx-10 mt-10">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-check-fill text-white dark:text-white" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-                </svg>
-                <span class="text-white ml-1 text-2xl font-bold">
-                    Doizee
-                </span>
-            </div>
+                <div
+                    class="flex items-center justify-center mx-10 mt-10 flex-shrink-0 font-['Bebas_Neue'] text-3xl text-white font-bold uppercase tracking-wide animate-pulse">
+                    <a className="">
+                        Techlance
+                    </a>
+                </div>
             <nav class="mt-10 px-6 overflow-y-auto h-4/6">
                 <a class="hover:text-gray-800 hover:bg-gray-100 flex items-center p-2 my-6 transition-colors dark:hover:text-white dark:hover:bg-gray-600 duration-200  text-gray-400 dark:text-gray-400 rounded-lg " [routerLink]="['dashboard']" [routerLinkActive]="['dark:bg-gray-600','bg-gray-100','text-gray-800','dark:text-gray-100']">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">

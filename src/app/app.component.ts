@@ -4,17 +4,13 @@ import { AppService } from './services/app.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent implements OnInit{
-  title = 'ui';
-  sidebarOpen :boolean = true;
+export class AppComponent implements OnInit {
+  title = 'Admin Dashboard';
+  sidebarOpen: boolean = true;
 
-  constructor(private appService:AppService){
-  }
+  constructor(private appService: AppService) {}
 
-  ngOnInit(): void {
-   
-  }
-
+  ngOnInit(): void {}
 }

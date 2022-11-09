@@ -1,16 +1,16 @@
-<p-card styleClass="h-fit mr-2">
-    <div class="w-full flex justify-start text-2xl items-center pb-2">
+<div class="bg-white p-5 rounded-lg">
+    <div class="w-full flex justify-start text-xl items-center pb-4">
         <span class="cursor-pointer" (click)="openContacts()" *ngIf="showBack"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
           </svg></span>&nbsp; Customer 1
     </div>
    
 
-    <div class="w-full overflow-y-auto sc2 shadow bg-gray-50 rounded-md" [ngClass]="{'h-[calc(100vh-22rem)]':smallScreen,'height-card':!smallScreen}">
+    <div class="w-full overflow-y-auto sc2 shadow bg-gray-50 rounded-md text-sm" [ngClass]="{'h-[calc(100vh-22rem)]':smallScreen,'height-card':!smallScreen}">
         <!-- Card -->
             <ul class="space-y-2 p-4 mt-2 rounded-lg">
                 <li class="flex justify-start">
-                  <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                  <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                     <span class="block">Hi</span>
                   </div>
                 </li>
@@ -25,13 +25,13 @@
                   </div>
                 </li>
                 <li class="flex justify-start">
-                  <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                  <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                     <span class="block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </span>
                   </div>
                 </li>
 
                 <li class="flex justify-start">
-                    <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                    <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                       <span class="block">Hi</span>
                     </div>
                   </li>
@@ -46,13 +46,13 @@
                     </div>
                   </li>
                   <li class="flex justify-start">
-                    <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                    <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                       <span class="block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </span>
                     </div>
                   </li>
 
                   <li class="flex justify-start">
-                    <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                    <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                       <span class="block">Hi</span>
                     </div>
                   </li>
@@ -67,13 +67,13 @@
                     </div>
                   </li>
                   <li class="flex justify-start">
-                    <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                    <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                       <span class="block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </span>
                     </div>
                   </li>
 
                   <li class="flex justify-start">
-                    <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                    <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                       <span class="block">Hi</span>
                     </div>
                   </li>
@@ -88,7 +88,7 @@
                     </div>
                   </li>
                   <li class="flex justify-start">
-                    <div class="relative max-w-xl px-4 py-2 bg-indigo-900 text-gray-100 rounded shadow">
+                    <div class="relative max-w-xl px-4 py-2 bg-primary-100 text-gray-100 rounded shadow">
                       <span class="block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </span>
                     </div>
                   </li>
@@ -100,10 +100,10 @@
     <!-- Input for message -->
     <div class="input-height mt-3 flex justify-between items-center w-full">
                 <input type="text" class="p-inputtext-sm w-full mr-5" pInputText placeholder="Enter your message">   
-                <button type="button" class="flex items-center py-3 px-5  ml-2 text-sm font-medium text-gray-100 focus:outline-none bg-indigo-600 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                <button type="button" class="flex items-center py-3 px-5  ml-2 text-sm font-medium text-gray-100 focus:outline-none bg-primary-100 rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-100 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
                     Send <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="ml-2 bi bi-send" viewBox="0 0 16 16">
                         <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
                       </svg>
                 </button>      
     </div>
-</p-card>
+</div>
